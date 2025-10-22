@@ -1,0 +1,67 @@
+.my-orders-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.my-orders-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f7fafc;
+}
+
+.orders-table td {
+  font-size: 0.9rem;
+}
+
+.status-paid,
+.status-delivered {
+  color: #2f855a;
+  /* background-color: #c6f6d5; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.status-not-paid,
+.status-not-delivered {
+  color: #c53030;
+  /* background-color: #fed7d7; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 3rem;
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+}
+
+.shop-now-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #2f855a;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}

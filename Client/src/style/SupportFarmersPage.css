@@ -1,0 +1,243 @@
+/* Color Variables */
+:root {
+  --primary-text-color: #2c7a7b; /* Teal */
+  --secondary-text-color: #38a169; /* Green */
+  --link-color: #3182ce; /* Blue */
+  --stat-background: #f0fff4; /* Light Mint */
+  --cta-background: #38a169;
+  --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Container Styling */
+.support-farmers-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Poppins", "Arial", sans-serif; /* Added Poppins (assuming it's imported or available) */
+  line-height: 1.6;
+  background-color: #ffffff; /* Explicitly set white background */
+}
+
+/* Utility Class for Primary Color */
+.primary-color {
+  color: var(--secondary-text-color);
+}
+
+/* Page Title and Section Titles */
+/* Added a slight text shadow for depth and an animation for flair */
+.page-title {
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(44, 122, 123, 0.3);
+  letter-spacing: 0.05em;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--secondary-text-color);
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Banner Image Section */
+.banner-container {
+  text-align: center;
+  margin-bottom: 2.5rem; /* Increased margin for better separation */
+}
+
+.banner-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px; /* Slightly larger border-radius */
+  box-shadow: var(--shadow-light); /* Added subtle shadow */
+}
+
+/* Supporting Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: center; /* Use center for better alignment when fewer cards */
+  flex-wrap: wrap;
+  gap: 1rem; /* Use gap for spacing instead of margin on stat-card */
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  flex: 1 1 200px; /* Adjusted base size for 4 columns on desktop */
+  min-width: 200px;
+  background-color: var(--stat-background);
+  padding: 1.5rem 1rem; /* More vertical padding */
+  border-radius: 10px;
+  text-align: center;
+  border-left: 5px solid var(--secondary-text-color); /* Added a color accent bar */
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: var(--shadow-hover);
+}
+
+.stat-card h2 {
+  font-size: 2em; /* Make the numbers stand out */
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.stat-card p {
+  font-weight: 500;
+  color: #4a5568;
+  margin-top: 0;
+}
+
+/* Benefits and Details Section */
+.details-section {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.help-list {
+  list-style-type: none; /* Removed default list style */
+  padding-left: 0;
+}
+
+.help-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #e2e8f0;
+  position: relative;
+  padding-left: 25px;
+}
+
+/* Custom list marker using pseudo-element (check mark) */
+.help-list li::before {
+  content: "✓";
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.learn-more-link-container {
+  margin-top: 1.5rem;
+}
+
+.learn-more-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--link-color);
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.learn-more-link:hover {
+  color: #4c51bf;
+  border-bottom-color: #4c51bf;
+}
+
+/* Gallery / Photos section */
+.gallery-section {
+  margin-top: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Min size increased */
+  gap: 1.5rem; /* Increased gap */
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 4/3; /* Slightly wider aspect ratio for variety */
+  object-fit: cover;
+  box-shadow: var(--shadow-light);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+/* Call to Action Section */
+.cta-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background-color: #f7fafc; /* Very light gray background for contrast */
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+}
+
+.cta-heading {
+  margin-bottom: 1rem;
+  font-size: 1.8em;
+  color: var(--primary-text-color);
+}
+
+.cta-text {
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: var(--cta-background);
+  color: white;
+  padding: 1rem 2.5rem; /* Increased padding */
+  border-radius: 9999px; /* Fully rounded pill shape */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem; /* Slightly larger text */
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #2f855a;
+  transform: translateY(-2px); /* Subtle lift on click/hover */
+  box-shadow: 0 5px 15px rgba(56, 161, 105, 0.4);
+}
+
+/* Media Queries for better mobile responsiveness */
+@media (max-width: 768px) {
+  .stats-section {
+    justify-content: space-evenly;
+  }
+  .stat-card {
+    flex: 1 1 45%; /* Two cards per row on smaller screens */
+  }
+  .page-title {
+    font-size: 1.8em;
+  }
+  .cta-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    flex: 1 1 100%; /* One card per row on very small screens */
+  }
+}

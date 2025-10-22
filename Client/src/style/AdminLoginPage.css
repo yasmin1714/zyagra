@@ -1,0 +1,116 @@
+/* --- ZYAGRA ADMIN LOGIN PAGE STYLES --- */
+
+/* 1. Main Container: Centers the form on the page */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7fafc; /* Light gray background */
+  font-family: "Poppins", sans-serif;
+}
+
+/* 2. The Form Card */
+.admin-login-form {
+  padding: 2.5rem 3rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* 3. Typography */
+.admin-login-form h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d3748; /* Dark Gray */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.admin-login-form p {
+  margin-bottom: 2rem;
+  color: #718096; /* Lighter Gray */
+}
+
+/* 4. Input Fields and Labels */
+.admin-login-form .input-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.admin-login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.admin-login-form input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.admin-login-form input:focus {
+  outline: none;
+  border-color: #2f855a; /* Green */
+  box-shadow: 0 0 0 3px rgba(47, 133, 90, 0.2);
+}
+
+/* 5. Submit Button */
+.admin-login-form button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: #2d3748; /* Dark Gray, professional look */
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-login-form button:hover {
+  background-color: #1a202c; /* Even Darker Gray */
+}
+
+/* 6. Error Message */
+.admin-login-form .error-message {
+  color: #e53e3e; /* Red */
+  background-color: #fed7d7; /* Light Red */
+  border: 1px solid #e53e3e;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+/* --- NEW STYLES FOR PASSWORD TOGGLE --- */
+
+/* This allows us to position the button inside the input area */
+.password-group {
+  position: relative;
+}
+
+/* This styles the button and places it on the right side */
+.password-toggle {
+  position: absolute;
+  top: 50%; /* Adjust if your label is on top */
+  right: 10px;
+  transform: translateY(10%); /* Fine-tune vertical alignment */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #718096;
+  padding: 5px;
+}

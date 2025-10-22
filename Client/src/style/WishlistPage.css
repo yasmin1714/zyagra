@@ -1,0 +1,64 @@
+.wishlist-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.wishlist-empty {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.btn-shop,
+.btn-clear,
+.btn-remove {
+  display: inline-block;
+  margin-top: 2rem; /* Space above the button */
+  margin-bottom: 4rem; /* Extra space below button before footer */
+  /* existing styles below */
+  background-color: #2c7a7b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-shop:hover,
+.btn-clear:hover,
+.btn-remove:hover {
+  background-color: #285e61;
+}
+
+.wishlist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.wishlist-item {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #f9fafb;
+}
+
+.wishlist-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.wishlist-details h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.wishlist-details p {
+  margin: 0.25rem 0;
+}
