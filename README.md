@@ -1,8 +1,6 @@
 # 🌾 ZYAGRA – Farmer-to-Consumer 
 ZYAGRA is an e-commerce web application designed to connect farmers directly with consumers, promoting organic products and encouraging sustainable agriculture. It facilitates the sale and purchase of fresh farm produce, dairy items, and other organic products by streamlining the supply chain from land to consumer.
 
-Video Demo :
-
 ---
 
 ## 📌 Features
