@@ -2,20 +2,36 @@
 ZYAGRA is an e-commerce web application designed to connect farmers directly with consumers, promoting organic products and encouraging sustainable agriculture. It facilitates the sale and purchase of fresh farm produce, dairy items, and other organic products by streamlining the supply chain from land to consumer.
 
 ---
+## 🛠️ Platform Overview
+### 1. Login
+<img src="./resources/Zyagra-1.png" width="60%" alt="Desktop Screenshot">
+
+### 2. About
+<img src="./resources/Zyagra-2.png" width="60%" alt="Desktop Screenshot">
+
+### 3. Admin Dashboard
+<img src="./resources/Zyagra-3.png" width="60%" alt="Desktop Screenshot">
+
+### 4. Product Dashboard
+<img src="./resources/Zyagra-7.png" width="60%" alt="Desktop Screenshot">
+
+### 5. Cart
+<img src="./resources/Zyagra-4.png" width="60%" alt="Desktop Screenshot">
+
+### 6. Payment Dashboard
+<img src="./resources/Zyagra-6.png" width="60%" alt="Desktop Screenshot">
+
+### 7. Contact
+<img src="./resources/Zyagra-5.png" width="60%" alt="Desktop Screenshot">
+
 
 ## 📌 Features
 - 🥬 Direct Farmer-Consumer Connection: Consumers can browse and buy fresh organic products directly from farmers.
-
 - 🛒 E-Commerce Functionality: Add to cart, checkout, and track orders seamlessly.
-
 - 🌱 Organic Product Catalog: Wide range of vegetables, fruits, dairy, and other organic items.
-
 - 📦 Order Management: Farmers can manage product availability and track orders.
-
 - 🔐 User Authentication: Secure sign-up and login for farmers and consumers with session management.
-
 - 💳 Payment Simulation: Integrated payment flow for a realistic e-commerce experience.
-
 - 📊 Analytics & Dashboard: Farmers and admin can view sales, inventory, and product performance.
 
 ---
@@ -112,14 +128,9 @@ ZYAGRA is an e-commerce web application designed to connect farmers directly wit
 
 | Name | Role |
 |------------|---------|
-| **D. Yasmin** | Backend Developer |
-| **D. Yasmin** | Database |
-| **Sandeep Kumar** | Frontend Developer |
-| **Srishti Yadav** | Frontend Developer |
-| **Minakshee** | UI Design |
+| **Yasmin D, Christ University** | Backend Developer, Database modelling |
+| **Sandeep Kumar, Christ University** | Frontend Developer |
+| **Srishti Yadav, Christ University** | Frontend Developer |
+| **Minakshee, Christ University** | UI Design |
 
 ---
-
-## 💌 Contact
-- 📧 Email: yasminddg@gmail.com
-- 🏛️ University:**Christ University Delhi NCR**
